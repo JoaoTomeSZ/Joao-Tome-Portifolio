@@ -4,9 +4,12 @@ import { useState } from "react";
 import SideBar from "./SideBar";
 import { AnimatePresence } from 'framer-motion';
 import "./Header.css"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const links = ["/About", "/Tecnologies", "/Projects", "/Mailme", "/Contacts", ]
 
   const onCLose = () => {
     setOpen(false)
@@ -23,29 +26,32 @@ const Header = () => {
   return (
     <div
       id="header-container"
-      className="flex flex-wrap flex-auto justify-center max-w-[100%] sticky top-0 p-5 bg-black lg:justify-around shadow-2xl"
+      className="flex flex-wrap flex-auto justify-center max-w-[100%] sticky top-0 p-5 bg-gradient-to-r from-neutral-100 to-neutral-300 text-black lg:justify-around shadow-2xl "
     >
-      <div
+      <nav
         id="nav-container"
-        className="flex flex-auto items-center lg:justify-between justify-between max-w-[75%] lg:max-w-[1024px] rounded-3xl text-[#6EE7B7]"
+        className="flex flex-auto items-center lg:justify-between justify-between max-w-[75%] lg:max-w-[1024px] rounded-3xl "
       >
         <h1 className="lg:text-6xl font-bold text-2xl">
+          <Link to={"/"}>
           JT 
           <span>
             <CodeIcon />
           </span>
+          </Link>
+          
         </h1>
         <ul className="hidden  gap-10 lg:block lg:flex">
           {navbarList.map((list, index) => (
             <li
-              className="list-none cursor-pointer relative inline-block text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-[#6EE7B7] after:transition-all after:duration-300 hover:after:w-full"
+              className="list-none cursor-pointer relative inline-block  after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
               key={index}
             >
-              <a>{list}</a>
+              <Link to={links[index]}>{list}</Link>
             </li>
           ))}
         </ul>
-        <button className="hidden lg:block lg:flex bg-white jumping-text text-black py-2 px-3 text- border-r-2 border-b-2 border-[#6EE7B7] transition-transform duration-300 hover:scale-102 cursor-pointer">
+        <button className="hidden lg:block lg:flex bg-neutral-300 jumping-text text-black py-2 px-3 text- border-r-2 border-b-2 border-black transition-transform duration-300 hover:scale-102 cursor-pointer">
           <a   href="/JoaoTomeCV.pdf" download>Download CV</a> 
         </button>
         <button
@@ -55,7 +61,7 @@ const Header = () => {
         >
           <MenuIcon />
         </button>
-      </div>
+      </nav>
       <AnimatePresence>
       {open && <SideBar close={onCLose} className="z-10"/>}
       </AnimatePresence>
