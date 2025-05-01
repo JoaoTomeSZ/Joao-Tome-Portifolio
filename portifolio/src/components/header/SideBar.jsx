@@ -3,6 +3,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
 
 const SideBar = ({ close }) => {
+  const links = ["/About", "/Tecnologies", "/Projects", "/Mailme", "/Contacts", ]
+
   const navbarList = [
     "About me",
     "Tecnologies",
@@ -25,7 +27,7 @@ const SideBar = ({ close }) => {
         <ul className="flex gap-3.5 flex-col md:gap-6">
           {navbarList.map((list, index) => (
             <li key={index} className="cursor-pointer">
-              <a>{list}</a>
+              <Link to={links[index]}>{list}</Link>
             </li>
           ))}
         </ul>

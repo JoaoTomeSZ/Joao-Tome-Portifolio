@@ -3,5 +3,4 @@
 body {
   @apply bg-gray-800 text-black;
   @apply font-[Cascadia_Code];
-  @apply scroll-smooth;
 }

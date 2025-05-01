@@ -1,6 +1,6 @@
 import "./App.css";
 import InitialPage from "./pages/InitialPage";
-import About from "./pages/About"
+import About from "./pages/AboutPage"
 import Contacts from "./pages/Contacts";
 import Projects from "./pages/Projects"
 import Tecnologies from "./pages/Tecnologies";

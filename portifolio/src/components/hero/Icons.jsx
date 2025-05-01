@@ -1,7 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const links = ['https://github.com', 'https://linkedin.com'];
+const links = ['https://github.com/JoaoTomeSZ', 'www.linkedin.com/in/joaotomesz'];
 const icons = [<GitHubIcon color="secondary" fontSize="large"/>, <LinkedInIcon color="primary" fontSize="large"/>];
 
 const Icons = () => {
