@@ -3,7 +3,7 @@ import InitialPage from "./pages/InitialPage";
 import About from "./pages/AboutPage"
 import Contacts from "./pages/Contacts";
 import Projects from "./pages/Projects"
-import Tecnologies from "./pages/Tecnologies";
+import Tecnologies from "./pages/TecnologiesPage";
 import MailMe from "./pages/MailMe";
 
 import "./index.css";

@@ -4,7 +4,7 @@ import Hero from "../components/hero/Hero";
 const InitialPage = () => {
   return (
     <div>
-      <Header className="z-10"/>
+      <Header/>
       <Hero />
       <About />
     </div>

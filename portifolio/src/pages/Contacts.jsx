@@ -4,8 +4,7 @@ import Header from '../components/header/Header'
 const Contacts = () => {
   return (
     <div>
-      <Header/>
-      
+      <Header/>  
       </div>
   )
 }

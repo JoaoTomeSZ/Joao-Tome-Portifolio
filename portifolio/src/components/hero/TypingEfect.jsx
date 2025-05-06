@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 const TypingAnimation = () => {
-  const text = "João Tomé";
+  const text = "João Tomé.";
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const typingSpeed = 150;
-  const deletingSpeed = 150;
-  const pauseTime = 3500; // pausa antes de apagar
+  const typingSpeed = 200;
+  const deletingSpeed = 100;
+  const pauseTime = 3000; 
 
   useEffect(() => {
     let timeout;
@@ -31,9 +31,9 @@ const TypingAnimation = () => {
   }, [index, isDeleting]);
 
   return (
-    <h1 className="lg:text-9xl font-bold text-[#6EE7B7] text-shadow-2xs text-4xl">
+    <h1 className="text-[28px] lg:text-2xl text-black text-shadow-2xs text- p-1">
       {text.slice(0, index)}
-      <span className="animate-pulse text-white">|</span>
+      <span className="animate-pulse text-gray-500">|</span>
     </h1>
   );
 };

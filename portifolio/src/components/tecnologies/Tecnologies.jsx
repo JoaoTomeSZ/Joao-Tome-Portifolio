@@ -1,10 +1,9 @@
 import React from 'react'
-import Header from '../components/header/Header'
 
 const Tecnologies = () => {
   return (
     <div>
-      <Header/>
+        <h1>joao</h1>
     </div>
   )
 }
