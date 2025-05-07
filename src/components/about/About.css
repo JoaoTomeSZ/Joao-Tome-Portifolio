@@ -1,0 +1,65 @@
+.a {
+  font-family: se;
+}
+
+@keyframes card {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes p {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump {
+  0%,
+  20% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  80% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.floating-text {
+  animation: jump 3s infinite;
+}
+
+.card-animate {
+  animation: card 1.5s ease;
+}
+
+.text-animate {
+  animation: card 1s ease-in-out;
+}
+
+.p-animate {
+  animation: p 1s ease-in-out;
+}
+
+.background {
+  background: #001f3f;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 31, 63, 1) 0%,
+    rgba(10, 41, 74, 1) 87%,
+    rgba(0, 31, 63, 1) 100%
+  );
+}

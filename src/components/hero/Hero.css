@@ -1,0 +1,23 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateX(-10px);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards; 
+}
+
+.font-size-md {
+    @media (width <= 1400px) And (width >= 600px) {
+        font-size: var(--text-7xl);
+        line-height: var(--tw-leading, var(--text-7xl--line-height) /* 1 */);
+    }
+}
+
