@@ -1,11 +1,11 @@
 import React from 'react'
 import TecIcons from './TecIcons'
-
+import "./Tecnologies.css"
 const Tecnologies = () => {
   return (
-    <div className='h-[calc(100vh-100px)] max-h-full w-full max-w-full bg-black p-10'>
-        <div className='max-w-full flex justify-center'> 
-            <h1 className='text-white lg:text-6xl'>Most Used Tecs</h1>
+    <div className='h-full w-full max-w-full bg-white items-center flex flex-col p-5'>
+          <h1 className='text-black text-3xl lg:text-7xl font-bold '>Most Used Tecs</h1>
+        <div className='max-w-full max-h-full flex justify-center items-center'>  
             <TecIcons/>
         </div>
     </div>

@@ -28,7 +28,7 @@ const AppearingText = () => {
         isVisible ? 'opacity-100 translate-y-0 text-animate' : 'opacity-0 translate-y-10'
       } `}
     >
-      <h1 className="md:text-7xl sm:text-4xl max-w[400px] lg:max-w-[800px] text-3xl Appearing-text-size floating-text text-[#D3D3D3]">I AM A SYSTEMS ANALYST AND DEVELOPER WITH <span className='text-[#4682B4] text-shadow-cyan-400 text-shadow-2xs'>A PASSION FOR PROGRAMMING.</span></h1>
+      <h1 className="md:text-7xl sm:text-4xl max-w[400px] lg:max-w-[800px] text-3xl Appearing-text-size floating-text font-bold text-[#D3D3D3]">I AM A SYSTEMS ANALYST AND DEVELOPER WITH <span className='text-[#4682B4] text-shadow-cyan-400 text-shadow-2xs'>A PASSION FOR PROGRAMMING.</span></h1>
     </div>
   );
 }

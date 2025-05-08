@@ -34,7 +34,7 @@ const Header = () => {
     
     <div
       id="header-container"
-      className="flex flex-auto justify-center max-w-[100%] h-[100px] p-5 bg-white/10 backdrop-blur-xl border-b border-white/30  text-black lg:justify-around shadow-md z-50"
+      className="flex flex-auto justify-center max-w-[100%] h-[100px] p-5 bg-white  text-black lg:justify-around shadow-md z-50"
     >
       <nav
         id="nav-container"
