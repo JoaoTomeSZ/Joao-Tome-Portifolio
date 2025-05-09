@@ -29,8 +29,8 @@ const About = () => {
 
 
   return (
-    <div  className="bg-[#001F3F] max-h-[100%] h-[calc(100vh-100px)] max-w-full w-full flex lg:items-center justify-around text-center flex-col">
-      <div className="flex justify-around items-center h-[50%] lg:max-w-[80%] max-h-full flex-col sm:flex-row w-full lg:text-left text-center lg:p-0 p-2">
+    <div  className="bg-[#001F3F] min-h-screen max-w-full w-full flex lg:items-center justify-around text-center flex-col">
+      <div className="flex justify-around items-center h-[50%] lg:max-w-[80%] max-h-full flex-col sm:flex-row w-full lg:text-left text-center lg:p-0 p-2 gap-5">
         <AppearingText />
         <img
           src={bgImg}
@@ -41,8 +41,8 @@ const About = () => {
       </div>
       <div className="flex lg:flex-row flex-col w-full lg:max-w-[80%] p-5 max-h-full flex-wrap justify-around items-center background">
         <CardBoxes/>
-        <p ref={ref} className={`max-w-full w-auto flex items-center justify-center ${
-        isVisible ? 'opacity-100 translate-y-[10px] floating-text' : 'opacity-0 translate-y-[-10px]'
+        <p ref={ref} className={`max-w-full w-auto flex items-center justify-center transition-opacity duration-1000 ease-in-out ${
+        isVisible ? 'opacity-100 translate-y-0 floating-text' : 'opacity-0 translate-y-[-10px]'
       } text-2xl sm:text-3xl text-white text-shadow-xs text-shadow-blue-300 flex-col floating-text`}>+30 Projects
           <p className="text-[#4682B4]">Front-End</p>
           <p>Back-End</p>

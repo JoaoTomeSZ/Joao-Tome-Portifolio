@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="border-b-2 border-black">
     <main
       id="hero-id"
-      className="w-full h-[calc(100vh-100px)] flex items-center justify-center z-50 static overflow-hidden m-0 p-0 "
+      className="w-full max-w-full min-h-[calc(100vh-100px)] flex items-center justify-center z-50 static overflow-hidden m-0 p-5 "
     >
       <div
         id="hero-elements-container"
@@ -23,7 +23,7 @@ const Hero = () => {
 
         <div className="max-w-[100%] flex flex-col justify-around text-center lg:items-left lg:text-left overflow-hidden m-0 p-0">
           <TypingAnimation />
-          <h2 className="text-4xl font-size-md lg:text-8xl  text-black border-black  ">
+          <h2 className="text-4xl md:text-6xl xl:text-8xl  text-black border-black  ">
             DESIGNING PRODUCTS AND <span className="text-gray-400 ">BRINGING YOUR DREAMS TO LIFE!</span> 
           </h2>
           <CvButton/>
