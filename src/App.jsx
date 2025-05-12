@@ -5,7 +5,6 @@ import Contacts from "./pages/ContactsPage";
 import Projects from "./pages/ProjectsPage"
 import Tecnologies from "./pages/TecnologiesPage";
 import MailMe from "./pages/MailMePage";
-
 import "./index.css";
 import {Suspense, lazy} from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
