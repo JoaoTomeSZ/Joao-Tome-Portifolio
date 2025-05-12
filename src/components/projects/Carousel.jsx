@@ -1,4 +1,5 @@
 import React from "react";
+import { lazy, Suspense } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +11,7 @@ import perfume from "/perfume.png";
 import weather from "/weather.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PanoramaIcon from '@mui/icons-material/Panorama';
+
 
 const Carousel = () => {
   const images = [tomeBurguer, simon, imperioBarber, perfume, weather];

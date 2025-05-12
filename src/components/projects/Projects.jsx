@@ -3,6 +3,7 @@ import Carousel from './Carousel'
 import "./Projects.css"
 import ProjectsImages from './ProjectsImages'
 
+
 const Projects = () => {
   return (
     <div className='min-h-screen flex flex-col justify-center items-center text-center bg-[#001F3F]'>

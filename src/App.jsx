@@ -11,7 +11,7 @@ import {Suspense, lazy} from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <Suspense  fallback={<p>Loading...</p>} >
+    <Suspense  fallback={<h1>Loading...</h1>} >
     <Router>
       <Routes >
         <Route path="/Joao-Tome-Portifolio" element={<InitialPage/>} />
