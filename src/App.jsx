@@ -1,10 +1,10 @@
 import "./App.css";
 import InitialPage from "./pages/InitialPage";
-import About from "./pages/AboutPage"
-import Contacts from "./pages/ContactsPage";
-import Projects from "./pages/ProjectsPage"
-import Tecnologies from "./pages/TecnologiesPage";
-import MailMe from "./pages/MailMePage";
+import AboutPage from "./pages/AboutPage"
+import ContactsPage from "./pages/ContactsPage";
+import ProjectsPage from "./pages/ProjectsPage"
+import TecnologiesPage from "./pages/TecnologiesPage";
+import MailMePage from "./pages/MailMePage";
 import "./index.css";
 import {Suspense, lazy} from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,11 +14,11 @@ function App() {
     <Router>
       <Routes >
         <Route path="/Joao-Tome-Portifolio" element={<InitialPage/>} />
-        <Route path="/About" element={<About/>}/>
-        <Route path="/Contacts" element={<Contacts/>}/>
-        <Route path="/Projects" element={<Projects/>}/>
-        <Route path="/Tecnologies" element={<Tecnologies/>}/>
-        <Route path="/Mailme" element={<MailMe/>}/>   
+        <Route path="/Joao-Tome-Portifolio/About" element={<AboutPage/>}/>
+        <Route path="/Joao-Tome-Portifolio/Contacts" element={<ContactsPage/>}/>
+        <Route path="/Joao-Tome-Portifolio/Projects" element={<ProjectsPage/>}/>
+        <Route path="/Joao-Tome-Portifolio/Tecnologies" element={<TecnologiesPage/>}/>
+        <Route path="/Joao-Tome-Portifolio/Mailme" element={<MailMePage/>}/>   
       </Routes>
     </Router>
     </Suspense>
