@@ -1,19 +1,19 @@
 import "./App.css";
 import InitialPage from "./pages/InitialPage";
 import About from "./pages/AboutPage"
-import Contacts from "./pages/Contacts";
-import Projects from "./pages/Projects"
+import Contacts from "./pages/ContactsPage";
+import Projects from "./pages/ProjectsPage"
 import Tecnologies from "./pages/TecnologiesPage";
-import MailMe from "./pages/MailMe";
+import MailMe from "./pages/MailMePage";
 
 import "./index.css";
 import {Suspense, lazy} from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <Suspense fallback={<p>Loading...</p>} >
+    <Suspense  fallback={<p>Loading...</p>} >
     <Router>
-      <Routes>
+      <Routes >
         <Route path="/Joao-Tome-Portifolio" element={<InitialPage/>} />
         <Route path="/About" element={<About/>}/>
         <Route path="/Contacts" element={<Contacts/>}/>

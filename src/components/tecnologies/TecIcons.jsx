@@ -41,10 +41,10 @@ const TecIcons = () => {
   return (
     <div ref={ref} className={`transition-opacity duration-2000 ease-in-out  ${
         isVisible ? `opacity-100 translate-y-0 pop-animate`: 'opacity-0 translate-y-10'
-      }  flex justify-center items-center min-h-screen min-w-screen`}>
+      }  flex justify-center items-center min-h-screen min-w-screen overflow-hidden p-10`}>
         <ul className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 md:grid-rows-2 gap-10 '>
             {icons.map((icons, index) => (
-                <li className='shadow-xl shadow-black icons-hover bg-black/80 backdrop-blur-3xl rounded-xl border-white/30 p-5 max-w-full max-h-full border-b text-center gap-2 flex flex-col justify-center items-center text-white' key={index} >
+                <li className='shadow-sm shadow-black icons-hover bg-black/80 backdrop-blur-3xl rounded-xl border-white/30 p-5 max-w-full max-h-screen border-b text-center gap-2 flex flex-col justify-center items-center text-white' key={index} >
                     <img src={icons} alt={names[index]} className='w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] object-contain icons-hover'/>
                     <p className='lg:text-2xl  text-sm object-contain'>{names[index]}</p>
                 </li>

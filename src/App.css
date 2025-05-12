@@ -3,5 +3,5 @@
 body {
   @apply bg-neutral-50 text-black;
   @apply font-[Cascadia_Code];
-  
+  @apply overflow-x-hidden;
 }

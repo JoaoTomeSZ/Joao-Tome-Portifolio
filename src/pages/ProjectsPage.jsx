@@ -5,6 +5,7 @@ const Projects = () => {
   return (
     <div>
         <Header/>
+        <Projects/>
     </div>
   )
 }

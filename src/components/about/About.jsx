@@ -29,8 +29,8 @@ const About = () => {
 
 
   return (
-    <div  className="bg-[#001F3F] min-h-screen max-w-full w-full flex lg:items-center justify-around text-center flex-col">
-      <div className="flex justify-around items-center h-[50%] lg:max-w-[80%] max-h-full flex-col sm:flex-row w-full lg:text-left text-center lg:p-0 p-2 gap-5">
+    <div  className="bg-[#001F3F] min-h-screen max-w-full w-full flex lg:items-center justify-around text-center flex-col pb-6">
+      <div className="flex justify-around items-center min-h-[500px] lg:max-w-[80%] max-h-full flex-col sm:flex-row w-full lg:text-left text-center lg:p-0 p-2 gap-5">
         <AppearingText />
         <img
           src={bgImg}

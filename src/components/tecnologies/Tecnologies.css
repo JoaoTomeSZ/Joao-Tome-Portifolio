@@ -7,9 +7,6 @@
     transition: 1s;
 }
 
-.bground{
-    background-image: url("/tecsbg.png");
-}
 
 @keyframes pop {
     0%{
