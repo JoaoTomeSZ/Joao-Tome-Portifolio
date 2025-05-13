@@ -1,18 +1,15 @@
-import React from 'react'
-import Carousel from './Carousel'
+import ProjectList from "./ProjectList"
 import "./Projects.css"
-import ProjectsImages from './ProjectsImages'
+
 
 
 const Projects = () => {
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center text-center bg-[#001F3F]'>
-      <div className='max-w-full max-h-full h-full my-auto mx-auto flex flex-col justify-between'>
-      <h1 className='text-white md:text-8xl text-4xl font-bold'>MY PROJECTS</h1>
-        <ProjectsImages/>
-        <Carousel/>
+    <div className='min-h-screen max-w-full flex md:flex-row flex-col justify-center items-center bg-white text-black'>
+      <div className="text-black flex lg:flex-row flex-col md:text-left text-center justify-around items-center max-w-full m-auto w-full pt-20">
+        <h1 className=" lg:text-9xl md:text-5xl text-3xl md:max-w-[600px] border-l-2 lg:border-l-10">MEET MY PROJECTS</h1>
+        <ProjectList/>
       </div>
-      
     </div>
   )
 }

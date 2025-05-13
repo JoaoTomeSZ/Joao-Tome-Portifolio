@@ -7,3 +7,11 @@
   height: 50px;
 
 }
+
+.projectHover:hover{
+  transform: scale(1.05);
+}
+
+.projectHover{
+  transition: .5s ease-in-out;
+}

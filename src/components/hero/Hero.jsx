@@ -7,7 +7,7 @@ import Me from "/JoaoCharacter.jpeg"
 
 const Hero = () => {
   return (
-    <div className="border-b-2 border-black">
+    <div className="border-b-2 border-black sm:pb-0 pb-10">
     <main
       id="hero-id"
       className="w-full max-w-full min-h-[calc(100vh-100px)] flex items-center justify-center z-50 static overflow-hidden m-0 p-5 "
