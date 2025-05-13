@@ -6,11 +6,10 @@ import CvSideBarButton from "../others/CvSideBarButton";
 
 
 const SideBar = ({ close }) => {
-  const links = ["/About", "/Tecnologies", "/Projects", "/Mailme", "/Contacts", ]
+  const links = ["/About", "/Projects", "/Mailme", "/Contacts", ]
 
   const navbarList = [
     "About me",
-    "Tecnologies",
     "Projects",
     "Mail me",
     "Contacts",

@@ -19,11 +19,11 @@ const ProjectsImages = () => {
     const projectNames = ["Tomé Burguer", "Simon Game", "Império Barber Shop", "Product Review", "Weather Now!"]
   return (
     <div className='w-full max-w-6xl max-h-[800px] h-full my-auto mx-auto sm:block hidden p-5 '>
-            <Swiper modules={[Navigation]} navigation loop className='rounded-2xl shadow-2xl w-full flex justify-center items-center'>
+            <Swiper modules={[Navigation]} navigation className='rounded-2xl shadow-2xl w-full flex justify-center items-center'>
                 {images.map((image, index) => (
                     <SwiperSlide key={index} className='flex justify-center text-center items-center'>
                         <div className='flex flex-col'>
-                            <img className='w-full h-full object-cover rounded-2xl' src={image} alt={imagesALT[index]} />
+                            <img className='w-full h-full object-cover rounded-2xl' loading='lazy' src={image} alt={imagesALT[index]} />
                             <h1 className='text-white text-5xl'>{projectNames[index]}</h1>
                         </div>
                         

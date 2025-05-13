@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from '../components/header/Header'
+import Projects from '../components/projects/Projects'
+<Projects/>
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <div>
         <Header/>
@@ -10,4 +12,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectsPage

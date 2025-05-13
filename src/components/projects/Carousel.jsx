@@ -43,7 +43,6 @@ const Carousel = () => {
       <Swiper
         modules={[Navigation]}
         navigation
-        loop
         className="rounded-2xl shadow-2xl w-full flex justify-center items-center"
       >
         {images.map((image, index) => (

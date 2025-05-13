@@ -10,7 +10,7 @@ import CvButton from "../others/CvButton";
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  const links = ["/About", "/Tecnologies", "/Projects", "/Mailme", "/Contacts", ]
+  const links = ["/About", "/Projects", "/Mailme", "/Contacts", ]
 
   const onCLose = () => {
     setOpen(false)
@@ -19,7 +19,6 @@ const Header = () => {
 
   const navbarList = [
     "About me",
-    "Tecnologies",
     "Projects",
     "Mail me",
     "Contacts",
