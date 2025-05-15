@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from '../components/header/Header'
-
-const MailMe = () => {
+import MailMe from "../components/mail/MailMe"
+const MailMePage = () => {
   return (
     <div>
       <Header/>
+      <MailMe/>
     </div>
   )
 }
 
-export default MailMe
+export default MailMePage

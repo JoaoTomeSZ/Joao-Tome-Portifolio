@@ -1,0 +1,10 @@
+@media (width >= 64rem /* 1024px */) {
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin:  center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+    
+}
+

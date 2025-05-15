@@ -12,6 +12,8 @@ const ProjectList = () => {
     const projectsNames= ["Tomé Burguer", "Simon Game", "Product-Review", "WeatherNow!"]
     const techStack = [[<MdHtml size={25}/>, <RiTailwindCssFill size={25}/>, <MdJavascript size={25}/>], [<MdHtml size={25}/>, <MdCss size={25}/>, <MdJavascript size={25}/>],
      [<MdHtml size={25}/>, <MdCss size={25}/>], [<MdHtml size={25}/>, <MdCss size={25}/>, <MdJavascript size={25}/>]]
+    const projectsLinks = []
+    const Descritptions = []
     
 
   return (
@@ -19,9 +21,9 @@ const ProjectList = () => {
         <div className="flex max-w-full">
                 <ul className="flex flex-col gap-10 max-w-full lg:p-0 p-4">
                     {projectsList.map((list, index) => (
-                        <li key={index} className="flex max-w-full w-150 p-5 items-start justify-start gap-5  rounded-md projectHover shadow-2xl shadow-[#001F3F]">
-                            <a href="">
-                                <img src={list} className="w-[100px] sm:w-[150px] md:w-[200px] rounded-sm border-2" />
+                        <li key={index} className="flex max-w-full w-full p-5 items-start justify-start gap-5  rounded-md projectHover shadow-2xl shadow-[#001F3F] ">
+                            <a href="" className="object-cover">
+                                <img src={list} className="w-[100px] max-h-full  m-auto sm:w-[150px] md:w-[200px] rounded-sm border-2" />
                             </a>
                             <div className="flex flex-col text-white">
                                 <a href=""><h2 className=" text-xl text-black">{projectsNames[index]} <ArrowOutwardIcon/></h2></a>

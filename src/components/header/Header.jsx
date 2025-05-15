@@ -26,14 +26,14 @@ const Header = () => {
 
   
   return (
-    <div className="sticky top-0 z-50 ">
+    <div className="sticky top-0 z-50">
       <AnimatePresence>
       {open && <SideBar close={onCLose} />}
       </AnimatePresence>
     
     <div
       id="header-container"
-      className="sticky top-0 flex flex-auto justify-center max-h-xs max-w-full p-5 bg-white  text-black lg:justify-around shadow-md z-50"
+      className="flex flex-auto justify-center max-h-xs max-w-full p-5 bg-white text-black lg:justify-around shadow-md "
     >
       <nav
         id="nav-container"

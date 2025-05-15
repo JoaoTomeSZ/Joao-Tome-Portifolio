@@ -1,6 +1,6 @@
-import React from "react";
+
 import "./About.css";
-import bgImg from "/codingAbout.png";
+import character from "/codingAbout.png";
 import { useEffect, useRef, useState } from 'react';
 import AppearingText from "./AppearingText";
 import CardBoxes from "./CardBoxes";
@@ -29,11 +29,11 @@ const About = () => {
 
 
   return (
-    <div  className="bg-[#001F3F] min-h-screen max-w-full w-full flex lg:items-center justify-around text-center flex-col pb-6">
-      <div className="flex justify-around items-center min-h-[500px] lg:max-w-[80%] max-h-full flex-col sm:flex-row w-full lg:text-left text-center lg:p-0 p-2 gap-5">
+    <div  className="bg-[#001F3F]  min-h-screen max-w-full w-full flex lg:items-center justify-around text-center flex-col pb-6">
+      <div className="flex justify-around items-center min-h-[500px] max-w-full m-auto w-auto max-h-full flex-col sm:flex-row w-full lg:text-left text-center lg:p-0 p-2 gap-5">
         <AppearingText />
         <img
-          src={bgImg}
+          src={character}
           loading="lazy"
           className="md:w-[350px] md:h-[350px] sm:w-[250px] sm:h-[250px] w-[200px] bg-white rounded-full  shadow-black "
           alt="Programming Class"
