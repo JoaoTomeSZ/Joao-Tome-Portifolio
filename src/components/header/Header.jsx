@@ -21,23 +21,22 @@ const Header = () => {
     "About me",
     "Projects",
     "Mail me",
-    "Contacts",
   ];
 
   
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 max-w-full">
       <AnimatePresence>
       {open && <SideBar close={onCLose} />}
       </AnimatePresence>
     
     <div
       id="header-container"
-      className="flex flex-auto justify-center max-h-xs max-w-full p-5 bg-white text-black lg:justify-around shadow-md "
+      className="flex flex-auto justify-center sticky top-0 max-h-xs max-w-full p-5 bg-white text-black lg:justify-around shadow-md "
     >
       <nav
         id="nav-container"
-        className="flex flex-auto items-center lg:justify-between justify-between max-w-[75%] lg:max-w-[1024px] rounded-3xl "
+        className="flex flex-auto items-center relative lg:justify-between justify-between max-w-[75%] lg:max-w-[1024px] rounded-3xl "
       >
         <h1 className="lg:text-6xl font-bold text-2xl">
           <Link to={"https://joaotomesz.github.io/Joao-Tome-Portifolio/"}>

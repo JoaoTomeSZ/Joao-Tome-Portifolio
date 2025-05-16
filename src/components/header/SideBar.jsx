@@ -12,7 +12,6 @@ const SideBar = ({ close }) => {
     "About me",
     "Projects",
     "Mail me",
-    "Contacts",
   ];
   return (
     <motion.div
@@ -26,7 +25,7 @@ const SideBar = ({ close }) => {
         <button onClick={close} className="cursor-pointer">
           <CloseIcon />
         </button>
-        <ul className="flex gap-3.5 flex-col md:gap-6">
+        <ul className="flex gap-4 flex-col md:gap-6">
           {navbarList.map((list, index) => (
             <li key={index} className="cursor-pointer">
               <Link to={links[index]}>{list}</Link>

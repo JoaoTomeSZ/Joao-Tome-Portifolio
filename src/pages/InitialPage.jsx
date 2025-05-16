@@ -1,4 +1,5 @@
 import About from "../components/about/About";
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
 import { MailMe } from "../components/mail/MailMe";
@@ -11,6 +12,7 @@ const InitialPage = () => {
       <About />
       <Projects/>
       <MailMe/>
+      <Footer/>
     </div>
   );
 };
